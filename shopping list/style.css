@@ -1,0 +1,98 @@
+:root{
+  --light-color: rgb(252, 217, 223);
+  --dark-color: rgb(184, 90, 105);
+
+
+}
+html{
+  box-sizing: border-box;
+  background-color: var(--light-color)
+}
+h1{
+  margin: 2rem;
+  text-align: center;
+  color: var(--dark-color);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.user{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#userinput{
+  border: 2px var(--dark-color)solid;
+  text-align: center;
+  width: 30rem;
+  height: 2rem;
+  transition: all 150ms ease-in-out;
+}
+
+#userinput:focus {
+  outline: 0.1rem solid var(--dark-color);
+  border-radius: 5px;
+}
+
+#enter{
+  margin-left: 10px;
+  padding: 0.6rem 2rem;
+  border: 2px var(--dark-color)solid;
+  background: var(--dark-color);
+  transition: all 180ms ease-in-out;
+}
+#enter:hover{
+  background: rgb(244, 156, 170);
+  border-radius: 5px;
+}
+#maindiv{
+  padding: 4rem;
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  justify-items: center;
+  gap:10rem
+  
+}
+.bold{
+  font-size: 1.1rem;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 10rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 13rem;
+  transition: all 180ms ease-in-out;
+  border: pink 0.8rem solid;
+  border-radius: 25px;
+  
+}
+.card:hover{
+  height: 12rem;
+  width: 15rem;
+  box-shadow: 10px 5px 5px rgb(120, 50, 50);
+}
+
+.del{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 10rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 13rem;
+  transition: all 180ms ease-in-out;
+  border: pink 0.8rem solid;
+  border-radius: 25px;
+  text-decoration-line: line-through;
+  opacity: 0.4;
+}
+.del:hover{
+  height: 10rem;
+  width: 13rem;
+}
+
+
